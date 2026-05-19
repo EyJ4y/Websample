@@ -1,0 +1,195 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DuyanStay Hotel Booking</title>
+  <!-- Google Fonts for Typography Toolkit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  
+  <header>
+    <div class="container topbar">
+      <div class="brand">
+        <img src="logo.png" alt="DuyanStay logo" class="brand-logo" />
+        <div class="brand-text">
+          <h1>DuyanStay Hotel</h1>
+          <p>Comfort stays in Buluan, Pigcawayan, Cotabato</p>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#rooms">Rooms</a>
+        <a href="#booking">Booking</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section with B1.jpeg Background -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Welcome to DuyanStay</p>
+          <h2>Your cozy hotel destination in Buluan, Pigcawayan, Cotabato.</h2>
+          <p>Book a relaxing stay with friendly service and modern comfort. DuyanStay offers affordable rooms, local hospitality, and easy access to nearby sights.</p>
+          <a class="button button-primary" href="#booking">Reserve a Room</a>
+        </div>
+        <div class="hero-card">
+          <h3>Quick hotel highlights</h3>
+          <ul>
+            <li>Clean rooms with free Wi-Fi</li>
+            <li>Secure parking and local breakfast</li>
+            <li>Philippine peso pricing from ₱2,500 / room</li>
+            <li>Owned by Justine Elopre, Ben Marco, and Kent Alamada</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-white">
+      <div class="container">
+        <div class="section-header">
+          <div class="header-left">
+            <h2>Discover the heart of DuyanStay</h2>
+            <p>Located in the welcoming town of Buluan, Pigcawayan, DuyanStay is the perfect base for families, couples, and business travelers seeking comfort in Cotabato.</p>
+          </div>
+          <div class="pricing-card">
+            <h3>Room price</h3>
+            <strong>₱2,500</strong>
+            <p>per room, per night</p>
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div class="info-card">
+            <h3>Hotel location</h3>
+            <p class="location-sub">Buluan, Pigcawayan, Cotabato</p>
+            <div class="info-list">
+              <span>• Easy access to local markets and landmarks</span>
+              <span>• Friendly staff ready to help with your travel plans</span>
+              <span>• Quiet streets and clean surroundings</span>
+            </div>
+          </div>
+          <div class="info-card">
+            <h3>Owners & hosts</h3>
+            <p class="location-sub">Meet the people behind DuyanStay</p>
+            <div class="info-list">
+              <span>• Justine Elopre</span>
+              <span>• Ben Marco</span>
+              <span>• Kent Alamada</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section id="rooms" class="section-inset">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <h2>Rooms & Guest Experience</h2>
+            <p>Every room at DuyanStay is designed to feel fresh and inviting.</p>
+          </div>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="media-stack">
+            <img src="P1.jpeg" alt="DuyanStay Room 1" />
+          </div>
+          <div class="media-stack">
+            <img src="P2.jpeg" alt="DuyanStay Room 2" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="section-white">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <h2>Reserve your stay</h2>
+            <p>Complete the booking form below and we will contact you to confirm your reservation.</p>
+          </div>
+        </div>
+
+        <div class="book-grid">
+          <div class="booking-panel">
+            <h3>Booking details</h3>
+            <form id="booking-form">
+              <div class="form-row single">
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" name="full-name" placeholder="Juan Dela Cruz" required />
+              </div>
+
+              <div class="form-row">
+                <div>
+                  <label for="age">Age</label>
+                  <input type="number" id="age" name="age" min="18" placeholder="25" required />
+                </div>
+                <div>
+                  <label for="phone">Contact Number</label>
+                  <input type="tel" id="phone" name="phone" placeholder="09XXXXXXXXX" pattern="[0-9]{10,11}" required />
+                </div>
+              </div>
+
+              <div class="form-row single">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required />
+              </div>
+
+              <div class="form-row single">
+                <label for="address">Address</label>
+                <textarea id="address" name="address" placeholder="Street, Barangay, City, Province" required></textarea>
+              </div>
+
+              <div class="form-row">
+                <div>
+                  <label for="checkin">Check-in Date</label>
+                  <input type="date" id="checkin" name="checkin" required />
+                </div>
+                <div>
+                  <label for="nights">Nights</label>
+                  <input type="number" id="nights" name="nights" min="1" value="1" required />
+                </div>
+              </div>
+
+              <div class="submit-row">
+                <span class="rate-indicator">Room rate: ₱2,500 per night</span>
+                <button class="button button-primary" type="submit">Send Booking</button>
+              </div>
+            </form>
+          </div>
+
+          <aside class="testimonial">
+            <h3>Why choose DuyanStay?</h3>
+            <p>We welcome guests who value local hospitality, neat rooms, and helpful service.</p>
+            <div class="aside-meta">
+              <p><strong>Owners:</strong> Justine Elopre, Ben Marco, Kent Alamada</p>
+              <p><strong>Location:</strong> Buluan, Pigcawayan, Cotabato</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 DuyanStay. All rights reserved.</p>
+      <p>Contact us at <a href="mailto:info@duyanstay.com">info@duyanstay.com</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
